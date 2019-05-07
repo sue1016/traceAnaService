@@ -7,9 +7,9 @@ def index(request):
 
 def getAllDataNeeded(request):
     dh = dataHandler()
-    #dh.getVisuData()
-    #dh.getAssoData()
-    dh.getAnoResult()
+    dh.getVisuData()
+    dh.getAssoData()
+    #dh.getAnoResult()
     return HttpResponse("added")
 
 

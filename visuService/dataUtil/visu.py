@@ -59,10 +59,12 @@ def exportVisuData(dataHandler):
         pathbook[frameCounter] = dotDic
         dotbook[frameCounter] = pathDic
 
-    with open(dataHandler.visuJSONpath,'w') as f:
+    with open(dataHandler.pathJSONpath,'w') as f:
         json.dump(pathbook,f)
+        print("写入pathbook到json文件完毕")
+    with open(dataHandler.dotJSONpath, 'w') as f:
         json.dump(dotbook,f)
-        print("写入画图信息到json文件完毕")
+        print("写入dotbook到json文件完毕")
 
 
 '''
